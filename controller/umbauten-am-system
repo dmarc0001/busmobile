@@ -1,0 +1,55 @@
+SAMBA installiert und simpelste config (NICHT sicher!) für bequemeres editieren vom Windows-Host aus
+- Python muss installiert sein 
+- kodi installiert
+
+
+GUI automoint abschalten unter GNOME:
+
+ gsettings set org.gnome.desktop.media-handling automount 'false'
+ gsettings set org.gnome.desktop.media-handling automount-open 'false'
+
+~/.config/pcmanfm/LXDE/pcmanfm.conf bearbeiten:
+
+--- schnipp ---
+ [volume]
+ mount_on_startup=0
+ mount_removable=0
+ --- schnapp ---
+
+date /etc/udev/rules.d/98-usb-mount.rules anlegen
+
+Die udev Regel bindet einen USB Stick zu einem festen Verzeichnis, sobald er gesteckt wird.
+Die ist NICHT sicher, falls ein weiterer Stick gesteckt wird (TODO: anpassen)
+
+--- schnipp ---
+ # ATTRS{serial}=="SERIENNUMMER DES STICKS"
+KERNEL=="sd?1", SUBSYSTEMS=="usb", SYMLINK+="mediastick", OWNER="pi", ACTION=="add", RUN{program}+="/bin/bash /home/pi/mediaplayer/controller/startPlay mediastick"
+KERNEL=="sd?1", SUBSYSTEMS=="usb", ACTION=="remove", RUN{program}+="/bin/umount /media/pi/mediastick"
+--- schnapp ----
+
+Wenn die USB-Sticks bekannt und in nicht zu grossser Stückzahl sind geht auch eine Regel per SERIENNUMMER
+
+
+20170823 - Xorg direkt in /etc/init.d/x11-pure ohne Fenstermanager starten
+           lightdm deaktiviert, /etc/X11/default-displaymanager umbenennen
+
+
+
+           
+20170823 - lightdm ausgeschaltet
+
+WICHTIG: SCREENBLANKING verhindern
+Datei /etc/lightdm/lightdm.conf
+----------- schnipp ---------------
+[SeatDefaults]
+xserver-command=X -s 0 -dpms
+------------ schnapp -------------
+
+
+# Waren bis Gerät bereit ist, wenn der Stick beim booten  schon steckt....
+/etc/init.d/clearMarkerForMP.sh => DAtei löscht die Markerdatei in /home/pi/mediaplayer/controller beim startPlay
+
+~pi/.config/lxsession/LXDE-pi/autostart erzeugt diese Datei, wenn GUI bereit ist
+
+
+

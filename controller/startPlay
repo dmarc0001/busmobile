@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# startet den eingeltlichen Starter im Hintergrund, da udev nur sehr kurze programme erlaubt
+#
+DATUM=`date +"[%Y%m%d-%R%S]"`
+echo "$DATUM starte /home/pi/mediaplayer/controller/StartPlay.py $1 ..." >> /var/log/mediaplayer/startPlay.console
+nohup su -c "/usr/bin/python3 /home/pi/mediaplayer/controller/StartPlay.py $1" pi  >> /var/log/mediaplayer/startPlay.console &
+echo "$DATUM ok" >> /var/log/mediaplayer/startPlay.console
+exit
+
+

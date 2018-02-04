@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#
+GPSFAKE=/usr/bin/gpsfake
+
+
+nohup $GPSFAKE -b -c .2 -l -P 2947 /home/pi/mediaplayer/bustour.nmea > /dev/null &
+
+
+

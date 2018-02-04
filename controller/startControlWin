@@ -1,0 +1,52 @@
+#!/bin/bash
+#
+#
+PYTHON=/usr/bin/python3
+PROGRAMPATH=/home/pi/mediaplayer/controller
+PROGNAME="TaskWindow.py"
+DATESTR="[%Y%m%d-%H%M%S]"
+DATUM=`date +"$DATESTR"`
+LOGFILE=/var/log/mediaplayer/taskWinStart.log
+WAITSEC=5
+export DISPLAY=:0.0
+PGREPEXPR="python3.*$PROGNAME"
+
+#
+# läuft das teil schon?
+#
+PID=`pgrep -u pi -f $PGREPEXPR`
+# ist das Programm da, alles gut
+if [ -n "$PID" ] ; then
+  echo "$DATUM user interface is running..." >&2 >> /var/log/mediaplayer/taskWinStart.log
+  exit
+else 
+  echo "$DATUM user interface is NOT running..." >&2 >> /var/log/mediaplayer/taskWinStart.log
+fi
+# Programm ist nicht da, unternimm etwas!
+#
+# warte, bis der Xorg Server gestartet ist und antwortet
+# warte max 60 sekunden lang
+#
+while ! xset q &>/dev/null; do
+  if [ $WAITSEC -lt 0 ] ; then
+    echo "$DATUM No X server at \$DISPLAY [$DISPLAY], EXIT!" >&2 >> /var/log/mediaplayer/taskWinStart.log
+    exit 1
+  fi
+  echo "$DATUM Xserver at \$DISPLAY [$DISPLAY] not responding, wait..." >&2 >> /var/log/mediaplayer/taskWinStart.log
+  sleep 1
+  WAITSEC=`expr $WAITSEC - 1`
+  DATUM=`date +"$DATESTR"`
+done
+#
+# Der X Server ist da und redet mit mir, starte das UI 
+#
+DATUM=`date +"$DATESTR"`
+echo "$DATUM start TASKWINDOW" >> /var/log/mediaplayer/taskWinStart.log
+cd $PROGRAMPATH
+nohup $PYTHON TaskWindow.py >> /var/log/mediaplayer/taskWinStart.log &
+#
+# erzeuge Merkerdatei, die anzeigt dass Xorg gestartet ist
+# gelöscht wird beim Systemstart/Systeshutdown
+#
+date +"%Y%m%d%H%M%S" > /home/pi/mediaplayer/controller/x-session.mark
+

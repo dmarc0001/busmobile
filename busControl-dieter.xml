@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  <stop>
+    <title></title>
+    <lat></lat>
+    <lon></lon>
+    <radius>800</radius>
+    <notice></notice>
+  </stop>
+-->
+
+ <controlroot>
+ <!--
+  <stop>
+    <title>E Eichenstraße</title>
+    <lat>52.732109</lat>
+    <lon>10.246403</lon>
+    <radius>150</radius>
+    <notice>Eichenstraße 33 Eschede 200 150m </notice>
+    <medium>haltestelleEschedeEichenstrasse33.jpg</medium>
+  </stop>
+   -->
+  <stop>
+    <title>E Siedlung</title>
+    <lat>52.72806</lat>
+    <lon>10.227091</lon>
+    <radius>80</radius>
+    <notice>Siedlung Eschede</notice>
+    <medium>haltestelleEschedeSiedlung.jpg</medium>
+  </stop>
+  <stop>
+    <title>E Ortsmitte</title>
+    <lat>52.733063</lat>
+    <lon>10.234198</lon>
+    <radius>80</radius>
+    <notice>Ortsmitte Eschede</notice>
+    <medium>haltestelleEschedeOrtsmitte.jpg</medium>
+  </stop>
+  <stop>
+    <title>E Bahnhofstraße</title>
+    <lat>52.736482</lat>
+    <lon>10.233353</lon>
+    <radius>80</radius>
+    <notice>Bahnhofstraße Eschede</notice>
+    <medium>haltestelleEschedeBahnhofstrasse.jpg</medium>
+  </stop>
+  <stop>
+    <title>E Bahnhof</title>
+    <lat>52.740607</lat>
+    <lon>10.230325</lon>
+    <radius>100</radius>
+    <notice>Bahnhof Eschede</notice>
+    <medium>haltestelleEschedeBahnhof.jpg</medium>
+  </stop>
+  <stop>
+    <title>E Bahnhofstraße</title>
+    <lat>52.736408</lat>
+    <lon>10.233278</lon>
+    <radius>70</radius>
+    <notice>Bahnhofstraße Eschede</notice>
+    <medium>haltestelleEschedeBahnhofstrasse.jpg</medium>
+  </stop>
+  <stop>
+    <title>E Südstraße</title>
+    <lat>52.731912</lat>
+    <lon>10.239424</lon>
+    <radius>80</radius>
+    <notice>Südstraße Eschede</notice>
+    <medium>haltestelleEschedeSuedstrasse.jpg</medium>
+  </stop>
+  <stop>
+    <title>E Habighorster Weg</title>
+    <lat>52.728358</lat>
+    <lon>10.241474</lon>
+    <radius>80</radius>
+    <notice>Eschede Habighorster Weg</notice>
+    <medium>haltestelleHabighorsterWeg.jpg</medium>
+  </stop>
+  <stop>
+    <title>Habinghorst Kirchweg</title>
+    <lat>52.713213</lat>
+    <lon>10.230834</lon>
+    <radius>150</radius>
+    <notice>Habinghorst Kirchweg</notice>
+    <medium>haltestelleHabighorstKirchweg.jpg</medium>
+  </stop>
+  <stop>
+    <title>Habighorst OM</title>
+    <lat>52.707638</lat>
+    <lon>10.228039</lon>
+    <radius>150</radius>
+    <notice>Habighorst OM</notice>
+    <medium>haltestelleHabighorstOrtsmitte.jpg</medium>
+  </stop>
+  <stop>
+    <title>Habighorst Habighorster Höhe</title>
+    <lat>52.700631</lat>
+    <lon>10.236778</lon>
+    <radius>100</radius>
+    <notice>Habighorst Habighorster Höhe</notice>
+    <medium>haltestelleHabighorstHabighorster Höhe.jpg</medium>
+  </stop>
+  <stop>
+    <title>Habighorst Gut</title>
+    <lat>52.71332</lat>
+    <lon>10.22029</lon>
+    <radius>150</radius>
+    <notice>Habighorst Gut</notice>
+    <medium>haltestelleHabighorstGut.jpg</medium>
+  </stop>
+  <stop>
+    <title>Höfer Essoh-Siedlung</title>
+    <lat> 52.690551</lat>
+    <lon> 10.249071</lon>
+    <radius>100</radius>
+    <notice>Höfer Essoh-Siedlung</notice>
+    <medium>haltestelleHoeferEssoSiedlung.jpg</medium>
+  </stop>
+  <stop>
+    <title>Höfer OM</title>
+    <lat>52.682594</lat>
+    <lon>10.252478</lon>
+    <radius>100</radius>
+    <notice>Höfer OM</notice>
+    <medium>haltestelleHoeferOrtsmitte.jpg</medium>
+  </stop>
+  <stop>
+    <title>Höfer Filmtierpark</title>
+    <lat>52.701515</lat>
+    <lon>10.26723</lon>
+    <radius>150</radius>
+    <notice>Höfer Filmtierpark</notice>
+    <medium>haltestelleHoeferFilmtierpark.jpg</medium>
+  </stop>
+  <stop>
+    <title>Höfer Aschenberg</title>
+    <lat>52.697357</lat>
+    <lon>10.268855</lon>
+    <radius>100</radius>
+    <notice>Höfer Aschenberg</notice>
+    <medium>haltestelleHoeferAschenberg.jpg</medium>
+  </stop>
+  <stop>
+    <title>Beedenbostel OM</title>
+    <lat>52.641975</lat>
+    <lon>10.259921</lon>
+    <radius>100</radius>
+    <notice>Beedenbostel OM</notice>
+    <medium>haltestelleBeedenbostelOrtsmitte.jpg</medium>
+  </stop>
+  <stop>
+    <title>Lachendorf OM</title>
+    <lat>52.620956</lat>
+    <lon>10.243142</lon>
+    <radius>180</radius>
+    <notice>Lachendorf OM</notice>
+    <medium>haltestelleLachendorfOrtsmitte.jpg</medium>
+  </stop>
+  <stop>
+    <title>Lachendorf Alter Bahnhof</title>
+    <lat>52.624698</lat>
+    <lon>10.243807</lon>
+    <radius>100</radius>
+    <notice>Lachendorf Alter Bahnhof</notice>
+    <medium>haltestelleLachendorfAlterBahnhof.jpg</medium>
+  </stop>
+  <stop>
+    <title>Garßen Golfplatz</title>
+    <lat>52.6552666</lat>
+    <lon>10.1552950</lon>
+    <radius>100</radius>
+    <notice>Herzogstatt Celle Golf</notice>
+    <medium>haltestelleGarssenGolfplatz.jpg</medium>
+  </stop>
+  <stop>
+    <title>Garßen OM/B191</title>
+    <lat>52.66105</lat>
+    <lon>10.1316</lon>
+    <radius>100</radius>
+    <notice>Garßen OM/B191</notice>
+    <medium>haltestelleGarssenOrtsmitte191.jpg</medium>
+  </stop>
+  <stop>
+    <title>Garßen Schule</title>
+    <lat>52.657108</lat>
+    <lon>10.132753</lon>
+    <radius>180</radius>
+    <notice>Garßen Schule</notice>
+    <medium>haltestelleGarssenSchule.jpg</medium>
+  </stop>
+  <stop>
+    <title>Quarmühle Quarmühle</title>
+    <lat>52.71499</lat>
+    <lon>10.20118</lon>
+    <radius>180</radius>
+    <notice>Quarmühle Quarmühle</notice>
+    <medium>haltestelleQuarmuehleQuarmuehle.jpg</medium>
+  </stop>
+  <stop>
+    <title>Burghorn Abzw Burghorn/B 191</title>
+    <lat>52.70752</lat>
+    <lon>10.18651</lon>
+    <radius>180</radius>
+    <notice>Burghorn Abzw Burghorn/B 191</notice>
+    <medium>haltestelleBurghornAbzweigBurghorn.jpg</medium>
+  </stop>
+  <stop>
+    <title>Hornshof Hornshof</title>
+    <lat>52.676678</lat>
+    <lon>10.143544</lon>
+    <radius>180</radius>
+    <notice>Hornshof Hornshof</notice>
+    <medium>haltestelleHornshofHornshof.jpg</medium>
+  </stop>
+  <stop>
+    <title>Burghorn 191</title>
+    <lat>52.700525</lat>
+    <lon>10.173022</lon>
+    <radius>100</radius>
+    <notice>Burghorn 191</notice>
+    <medium>haltestelleBurghornAbzweigBurghorn.jpg</medium>
+  </stop>
+  <stop>
+    <title>Gockenholz Gockenholz</title>
+    <lat>52.635819</lat>
+    <lon>10.216058</lon>
+    <radius>100</radius>
+    <notice>Gockenholz Gockenholz</notice>
+    <medium>haltestelleGockenholzGockenholz.jpg</medium>
+  </stop>
+  <stop>
+    <title>Haltestelle</title>
+    <notice>Aschauteiche Parkplatz Heese L1</notice>
+    <lat>52.751300</lat>
+    <lon>10.265884</lon>
+    <dir>45</dir>
+    <medium>haltestelleAschauteiche.jpg</medium>
+  </stop>
+  <position>
+    <title>Habinghorst</title>
+    <lat>52.7086533</lat>
+    <lon>10.2276017</lon>
+    <radius>1000</radius>
+    <notice>Habinghorst</notice>
+    <medium>habinghorst.jpg</medium>
+  </position>
+  <position>
+    <title>Kalischacht</title>
+    <lat>52.68826</lat>
+    <lon>10.2514083</lon>
+    <radius>800</radius>
+    <notice>Der alte Kalischacht</notice>
+    <medium>alterKalischacht.jpg</medium>
+  </position>
+  <position>
+    <title>Höfer</title>
+    <lat>52.6825183</lat>
+    <lon>10.2523766</lon>
+    <radius>800</radius>
+    <notice>Höfer Zentrum</notice>
+    <medium>hoeferZentrum.jpg</medium>
+  </position>
+  <position>
+    <title>Beedenbostel</title>
+    <lat>52.6478883</lat>
+    <lon>10.2578250</lon>
+    <radius>300</radius>
+    <notice>Mosterei Wendenroth</notice>
+    <medium>mostereiWendenroth.jpg</medium>
+  </position>
+  <position>
+    <title>Lachte</title>
+    <lat>52.6342616</lat>
+    <lon>10.2662583</lon>
+    <radius>300</radius>
+    <notice>Überquerung der Lachte</notice>
+    <medium>lachteZentrum.jpg</medium>
+  </position>
+  <position>
+    <title>Xenos</title>
+    <lat>52.6222583</lat>
+    <lon>10.2449700</lon>
+    <radius>600</radius>
+    <notice>in Lachendorf</notice>
+    <medium>xenosInLachendorf.jpg</medium>
+  </position>
+  <position>
+    <title>BLITZER</title>
+    <lat>52.7012066</lat>
+    <lon>10.1739133</lon>
+    <radius>600</radius>
+    <notice>Blitzer auf der B191</notice>
+    <medium>achtungBlitzer.jpg</medium>
+  </position>
+  <position>
+    <title>ReWe</title>
+    <lat>52.6578416</lat>
+    <lon>10.1278750</lon>
+    <radius>600</radius>
+    <notice>Einkaufen in Garßen</notice>
+    <medium>reweGarszen.jpg</medium>
+  </position>
+  <position>
+    <title>Golfclub</title>
+    <lat>52.6552666</lat>
+    <lon>10.1552950</lon>
+    <radius>600</radius>
+    <notice>Herzogstatt Celle Golf</notice>
+    <medium>golfclubCelle.jpg</medium>
+  </position>
+
+
+
+
+</controlroot>

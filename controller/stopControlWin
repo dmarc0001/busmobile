@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+#
+DATESTR="[%Y%m%d-%H%M%S]"
+DATUM=`date +"$DATESTR"`
+LOGFILE=/var/log/mediaplayer/taskWinStart.log
+PROGNAME="TaskWindow.py"
+PGREPEXPR="python3.*$PROGNAME"
+#
+# läuft das teil schon?
+#
+PID=`pgrep -u pi -f $PGREPEXPR`
+# ist das Programm da, alles gut
+if [ -n "$PID" ] ; then
+  echo "$DATUM user interface is running...KILL IT" >&2 >> /var/log/mediaplayer/taskWinStart.log
+  pkill -KILL -u pi -f "python3.*TaskWindow.py"
+  exit
+else 
+  echo "$DATUM user interface is NOT running..." >&2 >> /var/log/mediaplayer/taskWinStart.log
+fi

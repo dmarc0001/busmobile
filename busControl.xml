@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  <position>
+    <title></title>
+    <lat></lat>
+    <lon></lon>
+    <radius>800</radius>
+    <notice></notice>
+  </position>
+-->
+<controlroot>
+  <position>
+    <title>E Bahnhof</title>
+    <lat>52.7406917</lat>
+    <lon>10.2307383</lon>
+    <radius>500</radius>
+    <notice>Bahnhof Eschede</notice>
+    <medium>bahnhofEschede.jpg</medium>
+    <medium>bahnhofEschede.jpg</medium>
+  </position>
+  <position>
+    <title>E Zentrum</title>
+    <lat>52.7336967</lat>
+    <lon>10.2352417</lon>
+    <radius>800</radius>
+    <notice>Eschede Zentrum</notice>
+    <medium>zentrumEschede.jpg</medium>
+  </position>
+  <position>
+    <title>Habinghorst</title>
+    <lat>52.7086533</lat>
+    <lon>10.2276017</lon>
+    <radius>1000</radius>
+    <notice>Habinghorst</notice>
+    <medium>habinghorst.jpg</medium>
+  </position>
+  <position>
+    <title>Kalischacht</title>
+    <lat>52.68826</lat>
+    <lon>10.2514083</lon>
+    <radius>800</radius>
+    <notice>Der alte Kalischacht</notice>
+    <medium>alterKalischacht.jpg</medium>
+  </position>
+  <position>
+    <title>Höfer</title>
+    <lat>52.6825183</lat>
+    <lon>10.2523766</lon>
+    <radius>800</radius>
+    <notice>Höfer Zentrum</notice>
+    <medium>hoeferZentrum.jpg</medium>
+  </position>
+  <position>
+    <title>Beedenbostel</title>
+    <lat>52.6478883</lat>
+    <lon>10.2578250</lon>
+    <radius>300</radius>
+    <notice>Mosterei Wendenroth</notice>
+    <medium>mostereiWendenroth.jpg</medium>
+  </position>
+  <position>
+    <title>Lachte</title>
+    <lat>52.6342616</lat>
+    <lon>10.2662583</lon>
+    <radius>300</radius>
+    <notice>Überquerung der Lachte</notice>
+    <medium>lachteZentrum.jpg</medium>
+  </position>
+  <position>
+    <title>Xenos</title>
+    <lat>52.6222583</lat>
+    <lon>10.2449700</lon>
+    <radius>600</radius>
+    <notice>in Lachendorf</notice>
+    <medium>xenosInLachendorf.jpg</medium>
+  </position>
+  <position>
+    <title>BLITZER</title>
+    <lat>52.7012066</lat>
+    <lon>10.1739133</lon>
+    <radius>600</radius>
+    <notice>Blitzer auf der B191</notice>
+    <medium>achtungBlitzer.jpg</medium>
+  </position>
+  <position>
+    <title>ReWe</title>
+    <lat>52.6578416</lat>
+    <lon>10.1278750</lon>
+    <radius>600</radius>
+    <notice>Einkaufen in Garßen</notice>
+    <medium>reweGarszen.jpg</medium>
+  </position>
+  <position>
+    <title>Golfclub</title>
+    <lat>52.6552666</lat>
+    <lon>10.1552950</lon>
+    <radius>600</radius>
+    <notice>Herzogstatt Celle Golf</notice>
+    <medium>golfclubCelle.jpg</medium>
+  </position>
+  <position>
+    <title>Haltestelle</title>
+    <notice>Aschauteiche Parkplatz Heese L1</notice>
+    <lat>52.751300</lat>
+    <lon>10.265884</lon>
+    <dir>45</dir>
+    <medium>haltestelleAschauteiche.jpg</medium>
+  </position>
+  <position>
+    <title>Haltestelle</title>
+    <notice>Eschede Bahnhof L1</notice>
+    <lat>52.740640</lat>
+    <lon>10.230411</lon>
+    <dir></dir>
+    <medium>haltestelleEschedeBahnhof.jpg</medium>
+  </position>
+  <position>
+    <title>Haltestelle</title>
+    <notice>Habighorst Habighorster Höhe</notice>
+    <lat>52.700714</lat>
+    <lon>10.236716</lon>
+    <dir></dir>
+    <medium>haltestelleHabighorsterHoehe.jpg</medium>
+  </position>
+</controlroot>
